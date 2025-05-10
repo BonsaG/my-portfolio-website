@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/BonsaG/my-portfolio-website.git
 ```
 
 2. Navigate to the project directory:
