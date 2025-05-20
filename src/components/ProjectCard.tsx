@@ -7,6 +7,26 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const getStatusBadge = () => {
+    switch (project.id) {
+      case 1:
+      case 2:
+        return (
+          <span className="inline-block px-2 py-1 text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400 rounded-full mb-3">
+            In Progress
+          </span>
+        );
+      case 3:
+        return (
+          <span className="inline-block px-2 py-1 text-xs bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 rounded-full mb-3">
+            Completed
+          </span>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <div className="relative overflow-hidden h-48 sm:h-64">
@@ -21,6 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">
           {project.title}
         </h3>
+        
+        {getStatusBadge()}
         
         <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3 transition-colors duration-300">
           {project.description}
