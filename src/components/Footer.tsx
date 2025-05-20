@@ -1,5 +1,4 @@
 import React from "react";
-import { Heart } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -106,12 +105,6 @@ const Footer: React.FC = () => {
         <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             &copy; {currentYear} Bonsa Girma. All rights reserved.
-          </p>
-
-          <p className="text-gray-400 text-sm flex items-center">
-            Made with
-            <Heart size={16} className="mx-1 text-red-500" />
-            using React & Tailwind CSS
           </p>
         </div>
       </div>
