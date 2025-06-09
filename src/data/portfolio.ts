@@ -8,20 +8,26 @@ export const projects: Project[] = [
       "A full-stack e-commerce platform with product listings, user authentication, cart functionality, and payment processing.",
     image:
       "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "chapa API"],
     liveUrl: "https://example-ecommerce.com",
     githubUrl: "https://github.com/BonsaG/ecommerce-platform",
   },
   {
     id: 2,
-    title: "Birr-Guard- Mobile App",
+    title: "IMDB-clone",
     description:
-      "A productivity application that helps users organize tasks, set priorities, and track progress with an intuitive interface.",
-    image:
-      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-    liveUrl: "https://example-Money-Guard.com",
-    githubUrl: "https://github.com/BonsaG/Money-Guard.com",
+      "A responsive web application that replicates key features of the IMDb platform. Users can browse trending movies, view detailed information about each movie, and search for their favorite titles using a movie API.",
+    image: `${import.meta.env.BASE_URL}imdb-clone.png`,
+    technologies: [
+      "Next.js",
+      "javascript",
+      "API-Key",
+      "Tailwind CSS",
+      "Data: TMDB API (The Movie Database)",
+    ],
+    liveUrl:
+      "https://im-db-git-main-bonsa-girmas-projects-18a3a7b9.vercel.app/movie/1098006",
+    githubUrl: "https://github.com/BonsaG/IMDb.git",
   },
 
   {
@@ -29,8 +35,14 @@ export const projects: Project[] = [
     title: "House Rental Management System Frontend",
     description:
       "A modern, feature-rich web application for managing house rentals, built with React, TypeScript, and Vite.",
-      image: `${import.meta.env.BASE_URL}homerental.png`,
-    technologies: ["React", "Zustand", "TypeScript", "Tailwind css", "React Hook Form with Zod validation"],
+    image: `${import.meta.env.BASE_URL}homerental.png`,
+    technologies: [
+      "React",
+      "Zustand",
+      "TypeScript",
+      "Tailwind css",
+      "React Hook Form with Zod validation",
+    ],
     liveUrl: "https://example-HRMS.com",
     githubUrl: "https://github.com/BonsaG/home-rental.git",
   },
